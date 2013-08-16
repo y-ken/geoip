@@ -16,7 +16,7 @@ if have_library('GeoIP', 'GeoIP_record_by_ipnum') and have_header('GeoIPCity.h')
   # Defines HAVE_GEOIP_NUM_TO_ADDR
   have_func('GeoIP_num_to_addr', 'GeoIP.h')
 
-  create_makefile('geoip')
+  create_makefile('geoip-c')
 else
   abort("you must have geoip c library installed!")
 end

@@ -14,7 +14,7 @@ mapping information. It is kindly provided free of charge by MaxMind.com.
 
 Usage
 
-    require 'geoip'
+    require 'geoip-c'
     db = GeoIP::City.new('/opt/GeoIP/share/GeoIP/GeoLiteCity.dat')
     result = db.look_up('24.24.24.24')
     p result 
@@ -54,7 +54,7 @@ For example
 Usage for Organization Search
 -----------------------------
 
-    require 'geoip'
+    require 'geoip-c'
     db = GeoIP::Organization.new('/opt/GeoIP/share/GeoIP/GeoIPOrg.dat')
     db.look_up('24.24.24.24')
     # => {:name=>"Road Runner"}
